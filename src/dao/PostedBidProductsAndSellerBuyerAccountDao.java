@@ -1,0 +1,13 @@
+package dao;
+
+import java.util.List;
+
+import model.PostedBidProducts;
+import model.PostedBidProductsAndSellerBuyerAccount;
+import model.SellerBuyerAccount;
+
+public interface PostedBidProductsAndSellerBuyerAccountDao {
+	public List<PostedBidProductsAndSellerBuyerAccount> getPostedBidProductsAndSellerBuyerAccountWithProductId(PostedBidProducts postedBidProducts);
+	public Boolean setUpdatedPostedBidProductsAndSellerBuyerAccount(PostedBidProductsAndSellerBuyerAccount postedBidProductsAndSellerBuyerAccount);
+	public List<PostedBidProductsAndSellerBuyerAccount> getAllBidedProducts(SellerBuyerAccount sellerBuyerAccount);
+}
